@@ -1,6 +1,6 @@
 # Dimensionality Reduction and Clustering Toolbox
 
-This toolbox provides Python implementations of popular dimensionality reduction techniques (ACP, t-SNE, UMAP) and a clustering algorithm (KMeans).
+This toolbox provides Python implementations of popular dimensionality reduction techniques (ACP, t-SNE, UMAP) and a clustering algorithm (KMeans-birch).
 
 ## Table of Contents
 
@@ -19,7 +19,6 @@ This repository contains Python scripts implementing the following algorithms:
 - **ACP (Principal Component Analysis):** `mazlin/experiments/template_branche_mazlin.py`
 - **t-SNE (t-distributed Stochastic Neighbor Embedding):** `mazlin/experiments/template_branche_hatim.py`
 - **UMAP (Uniform Manifold Approximation and Projection):** `mazlin/experiments/template_branche_abdelhak.py`
-- **KMeans Clustering:** `kmeans.py`
 
 These algorithms are commonly used for dimensionality reduction and clustering in machine learning and data analysis.
 
