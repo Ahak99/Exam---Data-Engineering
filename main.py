@@ -11,14 +11,14 @@ import joblib
 
 
 # Load the pre-trained models
-kmeans_PCA_model = joblib.load('experiments\kmeans_PCA_model.joblib')
-birch_PCA_model = joblib.load('experiments\\birch_PCA_model.joblib')
+kmeans_PCA_model = joblib.load('kmeans_PCA_model.joblib')
+birch_PCA_model = joblib.load('birch_PCA_model.joblib')
 # Load the pre-trained models
-kmeans_TSNE_model = joblib.load('experiments\kmeans_TSNE_model.joblib')
-birch_TSNE_model = joblib.load('experiments\\birch_TSNE_model.joblib')
+kmeans_TSNE_model = joblib.load('kmeans_TSNE_model.joblib')
+birch_TSNE_model = joblib.load('birch_TSNE_model.joblib')
 # Load the pre-trained models
-kmeans_Umap_model = joblib.load('experiments\kmeans_Umap_model.joblib')
-birch_Umap_model = joblib.load('experiments\\birch_Umap_model.joblib')
+kmeans_Umap_model = joblib.load('kmeans_Umap_model.joblib')
+birch_Umap_model = joblib.load('birch_Umap_model.joblib')
 
 
 def model_clustering(mat, p, red_method, cluster_method):
