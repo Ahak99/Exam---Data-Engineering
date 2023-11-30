@@ -9,8 +9,7 @@ Original file is located at
 # **1. Install librairies**
 """
 
-!pip install sentence_transformers
-!pip install umap-learn
+
 
 """# **2. Import librairies**"""
 
