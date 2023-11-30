@@ -35,7 +35,7 @@ def model_clustering(mat, p, red_method, cluster_method):
         model = TSNE(n_components=p, method='exact', random_state=42)
         red_mat = model.fit_transform(mat)
         if cluster_method == 'Kmeans':
-            model = kmeans_PCA_model
+            model = joblib.load('kmeans_TSNE_model.joblib')
         elif cluster_method == 'Birch':
             model = joblib.load('birch_TSNE_model.joblib')
 
