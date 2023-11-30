@@ -16,9 +16,9 @@ This toolbox provides Python implementations of popular dimensionality reduction
 
 This repository contains Python scripts implementing the following algorithms:
 
-- **ACP (Principal Component Analysis):** `mazlin/experiments/template_branche_mazlin.py`
-- **t-SNE (t-distributed Stochastic Neighbor Embedding):** `mazlin/experiments/template_branche_hatim.py`
-- **UMAP (Uniform Manifold Approximation and Projection):** `mazlin/experiments/template_branche_abdelhak.py`
+- **ACP (Principal Component Analysis):** `main/experiments/template_branche_mazlin.py`
+- **t-SNE (t-distributed Stochastic Neighbor Embedding):** `main/experiments/template_branche_hatim.py`
+- **UMAP (Uniform Manifold Approximation and Projection):** `main/experiments/template_branche_abdelhak.py`
 
 These algorithms are commonly used for dimensionality reduction and clustering in machine learning and data analysis.
 
