@@ -10,17 +10,6 @@ from sklearn.cluster import Birch, KMeans
 import joblib
 
 
-# Load the pre-trained models
-kmeans_PCA_model = joblib.load('kmeans_PCA_model.joblib')
-birch_PCA_model = joblib.load('birch_PCA_model.joblib')
-# Load the pre-trained models
-kmeans_TSNE_model = joblib.load('kmeans_TSNE_model.joblib')
-birch_TSNE_model = joblib.load('birch_TSNE_model.joblib')
-# Load the pre-trained models
-kmeans_Umap_model = joblib.load('kmeans_Umap_model.joblib')
-birch_Umap_model = joblib.load('birch_Umap_model.joblib')
-
-
 def model_clustering(mat, p, red_method, cluster_method):
     '''
     Perform dimensionality reduction
@@ -37,26 +26,26 @@ def model_clustering(mat, p, red_method, cluster_method):
         model = PCA(n_components=p)
         red_mat = model.fit_transform(mat)
         if cluster_method == 'Kmeans':
-            model = joblib.load('experiments\kmeans_PCA_model.joblib')
+            model = joblib.load('kmeans_PCA_model.joblib')
         elif cluster_method == 'Birch':
-            model = joblib.load('experiments\\birch_PCA_model.joblib')
+            model = joblib.load('birch_PCA_model.joblib')
             
 
     elif red_method == 'TSNE':
         model = TSNE(n_components=p, method='exact', random_state=42)
         red_mat = model.fit_transform(mat)
         if cluster_method == 'Kmeans':
-            model = joblib.load('experiments\kmeans_TSNE_model.joblib')
+            model = kmeans_PCA_model
         elif cluster_method == 'Birch':
-            model = joblib.load('experiments\\birch_TSNE_model.joblib')
+            model = joblib.load('birch_TSNE_model.joblib')
 
     elif red_method == 'UMAP':
         model = UMAP(n_components=p)
         red_mat = model.fit_transform(mat)
         if cluster_method == 'Kmeans':
-            model = joblib.load('experiments\kmeans_Umap_model.joblib')
+            model = joblib.load('kmeans_Umap_model.joblib')
         elif cluster_method == 'Birch':
-            model = joblib.load('experiments\\birch_Umap_model.joblib')
+            model = joblib.load('birch_Umap_model.joblib')
 
     else:
         raise Exception("Please select one of the three methods: APC, AFC, UMAP")
