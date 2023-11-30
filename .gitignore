@@ -3,3 +3,4 @@ venv
 birch_PCA_model.joblib
 kmeans_PCA_model.joblib
 app.py
+template_branche_Abdelhak.ipynb
