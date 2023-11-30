@@ -16,9 +16,9 @@ This toolbox provides Python implementations of popular dimensionality reduction
 
 This repository contains Python scripts implementing the following algorithms:
 
-- **ACP (Principal Component Analysis):** `acp.py`
-- **t-SNE (t-distributed Stochastic Neighbor Embedding):** `tsne.py`
-- **UMAP (Uniform Manifold Approximation and Projection):** `umap.py`
+- **ACP (Principal Component Analysis):** `mazlin/experiments/template_branche_mazlin.py`
+- **t-SNE (t-distributed Stochastic Neighbor Embedding):** `mazlin/experiments/template_branche_hatim.py`
+- **UMAP (Uniform Manifold Approximation and Projection):** `mazlin/experiments/template_branche_abdelhak.py`
 - **KMeans Clustering:** `kmeans.py`
 
 These algorithms are commonly used for dimensionality reduction and clustering in machine learning and data analysis.
@@ -31,9 +31,11 @@ Make sure you have the following dependencies installed:
 - `scikit-learn`
 - `umap-learn`
 - `matplotlib`
+- `sentence_tranformers`
+- `joblib`
 
 You can install them using:
 
 ```bash
-pip install numpy scikit-learn umap-learn matplotlib
+pip install numpy scikit-learn umap-learn matplotlib sentence_tranformers joblib
 
