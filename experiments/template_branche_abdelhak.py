@@ -187,4 +187,3 @@ plt.show()
 plt.scatter(reduced_features[:, 0], reduced_features[:, 1], c = Birch_cluster, cmap='viridis')
 plt.title('PCA Visualization with Birch Clusters')
 plt.show()
-
